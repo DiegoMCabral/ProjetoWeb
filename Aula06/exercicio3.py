@@ -20,6 +20,6 @@ litrotinta = math.ceil (quantidadelitro)
 if material == "lata":
     print(f"Será necessário {lata18_arredondado} latas de 18L para pintar o cômodo") 
 elif material == "galao":
-    print(f"Será necessário {galao36_arredondado} galões de 3,6 Lpara pintar o cômodo") 
+    print(f"Será necessário {galao36_arredondado} galõees de 3,6 Lpara pintar o cômodo") 
 else:
     print(f"Será necessário {litrotinta} litros para realizar a pintura do cômodo")  
