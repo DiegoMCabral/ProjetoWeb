@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<br>
+  <head>
+    <h1>Roupas Xique Xique</h1>
+    <h2>Cadastro</h2>
+  </head>
+<form>
+<fieldset>
+    <legend><h3>Dados Pessoais</h3></legend>
+    <label for="name">Nome:</label>
+     <input type="text"
+      id="name" 
+      name="Nome do Cliente"
+      maxlength="30"
+      minlength="10"
+      size="40"
+      required
+      autofocus
+
+      <label for="name">Cor Preferida</label>
+<input type="color">
+      </label>
+
+<br>
+
+<label for="password">Senha:</label>
+      <input type="password" id="password" name="password"
+      maxlegnth="12"
+      size="40"
+      placeholder="Preencha aqui"> </fieldset>
+
+<fieldset>
+    <legend><H3>Dados de Cobrança</H3></legend>
+    <label for="cidade"> Cidade </label>
+    <input tpye="text"
+    name="cidade"
+    id="cidade"
+    value="Votorantim"
+    disabled 
+   
+      <label for="UF"> UF </label>
+      <select>
+        <optgroup label="Região Norte">
+            <option value="AM">AM</option>
+            <option value="AC">AC</option>
+            <option value="TO">TO</option>
+            <option value="RR">RR</option>
+            <option value="RO">RO</option>
+            <option value="PA">PA</option>
+            <option value="AP">AP</option>
+        </optgroup>
+        <optgroup label="Região Sul">
+            <option value="SC">SC</option>
+            <option value="RS">RS</option>
+            <option value="PR">PR</option>
+        </optgroup>
+    </optgroup>
+    <optgroup label="Região Sudeste">
+        <option value="SP">SP</option>
+        <option value="RJ">RJ</option>
+        <option value="MG">MG</option>    
+        <option value="ES">ES</option> 
+    </optgroup>
+      </select>
+      <input type="checkbox" name="TipoEnvio" id="Envio">
+<label for="envio">Entrega Express 24h</label>
+<br>
+<br>
+
+<p><h4>Estado Civil</h4></p>
+<input value="Solteiro" type="radio" name="EstadoCivil" id="EstCiv">
+<label for="estadocivil">Solteiro</label>
+<input type="radio" name="EstadoCivil" id="EstCiv">
+<label value="Casado" for="estadocivil">Casado</label>
+<input type="radio" name="EstadoCivil" id="EstCiv">
+<label value = "Divorciado" for="estadocivil">Divorciado</label>
+<input type="radio" name="EstadoCivil" id="EstCiv">
+<label value="Viúvo" for="estadocivil">Viúvo</label>
+
+<br>
+<br>
+<br>
+
+    <input type="submit" value="Cadastrar">
+</fieldset>
+    <fieldset>
+        <legend><H3>Pesquisa de Satisfação</H3></legend>
+        <label for="pesquisa"> Dê sua nota </label>
+        <input type="range" min="0" max="10" step="2">
+    </form>
+  </body>
+</html>
