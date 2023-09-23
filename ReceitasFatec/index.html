@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <script src="https://kit.fontawesome.com/37c3e79cd9.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>RECEITAS</title>
         <style>
-            h3{color: orange;}
+            figure{margin:0};
+            img{width:50%;}
+            h2{color: orange;}
+            h3{background-color: rgba(198, 194, 194, 0.833); color:rgb(81, 80, 80); width: 40%; text-align: center;}
+            h4{size: 5; color:black; text-align: center};
+            p,td{color:orange; text-align:center};
         </style>
-    </head>
+        <link rel="stylesheet" href="index.css">
+    </head> 
     <header>
-        <div style="display:flex;">
-        <h3>BOLINHO DE CHURROS</h3> 
+        <div style="display:flex">
+        <h2>BOLINHO DE CHURROS</h2> 
         <figcaption>Avalie essa receita</figcaption>
-        <figure><img style="width: 20%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAABwCAMAAAC6s4C9AAAA3lBMVEX/////0RL///3//v/+zgD8///+0g///f////v//v3/0AD/0BP9//r80QD+//n8zwD40AD///T20gD2////zRD6//f+//L70hX81AD31CT64XX21QD5//v35Zj+/OH66aX432H254v7+dr52Un58Lz35YH56J734mb8+Or88838++f377P331v45JP055L31i782VP64Yf276L51ET02U3142747qz7/eX84Xv811r/9//y2DX+6r399tP99Mb989T85qn81Tj52k350Cj49Lbw2kH25nv52m306Ybs3FWtB22mAAAXdElEQVR4nO1de3faONP3RZIly7IMGAyEACFAgCSQC0nbJxtSmjbb/f5f6B0ZSAwBYxPzx3uOp6fpZoHRz6PR3DQSmpZTTjnllFNOOeWUU0455ZRTTjnllFNOOeWUU0455ZRTTjnllFNOOf3/IJcVzOy5NiyjQanGsudsua6VPVdNo0aDmU72fM2C6WbPdY2odQTcmuFqpqkxI3vODqVHAGwAXFNzcPacNceiR+AaJeubdQTgZtkcweo+wirUCoUjMDWYWRhZ5SPYI8yaR7EaEaIPx1grzC1dd+gRGGvmZfcIgtYMp3NdOobFM9gDBcDHUOYVdeTzESRtGOXXPj6GSHC7fQxz5+L+a5keweThZ6+TPdc16qPbI3Cl5sy7cY/hBCq6XjkCW+beyJl5DMC3qH8ErhFyz0VwhMXCcB2h52M48kchHrPnSq1nhOrHWN60Js7d45lRkxVeZFXOcCFrW+oYRV2Os3YuEIq6P4T44eKsw39w3UgvGlnHukYBd2VVvJTZsSaRargniP2AadYj4K7QeS1rrTZcZ+QJ4Y0cN2OdY7jGiehmvgwpfrCJ7GHtGJFdOIDj1mzdro1w5lPYljoXw4y5AuC+IET0s487hoLrduaBEsMjJeCJe4xAaTFCY+hxEHU30ylkJjMGAfF11MPUzFT9ymxq67r9i5Wz5EpNintI90kwMLIN/02woyBgOSwfzZDiutRBJHWcpaANy8WXqMoJr1EnUwtCSx0P8Opep5SlVlNGaY17fhVdYsfKVBS4bmcv4ChRdsJhBF5sZqkk2CrjG6QTj8vLbFNDav5VKqfLv5mG/wxUTnBCdHSDy5nWqnCz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" alt="Avalie essa receita"></figure>
+        <i class="fa-solid fa-star" style="color: #eeff00;"></i>
+        <i class="fa-solid fa-star" style="color: #eeff00;"></i>
+        <i class="fa-solid fa-star" style="color: #eeff00;"></i>
+        <i class="fa-solid fa-star" style="color: #eeff00;"></i>
+        <i class="fa-regular fa-star" style="color: #eeff00;"></i>
     </div>
 <figure><img src="https://static.itdg.com.br/images/640-400/26d099dd5887204f191fc38c0c564f4e/366034-original.jpg" alt="Churros"></figure>
     </header>
     <table class="table">
-        <thead>
-            <tr>
-                <th style='color: orange;text: center;'>INGREDIENTES</th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <thead>
-            <tr>
-                <th style="border: none; height: 20px; background-color: rgb(171, 169, 169) ;">Massas</th>
-                <tr>
-                    <td>•200ml de água</td>
-                </tr>
-                <tr>
-                    <td>•1 colher (sopa) de manteiga</td>
-                </tr>
-                <tr>
-                    <td>•4 colheres (sopa) de açúcar</td>
-                </tr>
-                    <td>•1 colher (chá) de canela em pó</td>
-                </tr>
-                <tr>
-                    <td>•1 xícara de farinha de trigo</td>
-                </tr>
-            </tr>
-        </thead>
+<table>
+    <tbody>
+       <style>
+        td{background-color:rgba(179, 179, 179, 0.752); color:black; size: 30px;height: 70px;}
+        td{width: 18.2%}
+       </style>
+        <td><h4>Preparo <br>35min</h4></td>
+        <td><h4>Rendimento <br> 8 porções</h4></td>
+        <td><h4>Favoritos <br> 1.168</h4></td>
+        <td><h4>Comentários <br>4</h4></td>
+        <td><h4>TudoGostoso <br>Membro desde 2005</h4></td>
+    </tbody>
+    <p></p>
+ <th><h2 style="text-align:center">Ingredientes</h2>
+</table>
+    <tr><h3>Massas</h3></tr>
+    <li>200ml de água</li>
+    <li>1 colher (sopa) de manteiga</li>
+    <li>4 colheres (sopa) de açúcar</li>
+    <li>1 colher (chá) de canela em pó</li>
+    <li>1 xícara de farinha de trigo</li>
+        <br>
         <tbody>
-            <tr>
+                <tr><h3>Empanamento</h3></tr>
+            <li>1 colher (sopa) de canela</li>
+            <li>1/2 colher xícara de açúcar</li>  
+            </tbody>
+<br>
+            <tr><h3>Recheio</h3></tr>
+            <li>150g de doce de leite</li>
+            <br>
+            <input style=background-color:orange input type="button"  style='color:white' value="Comprar Ingredientes">
+            <tr>  
                 <td scope="row"></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
                 <td scope="row"></td>
                 <td></td>
                 <td></td>
             </tr>
         </tbody>
     </table>
+
 
