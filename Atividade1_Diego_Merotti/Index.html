@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> Trabalhando com Números</h2>
+        <label id="ln1">Número 1</label>
+        <input type="text" name="vn1" id="n1">
+        <br>
+        <input type="button" value="Somar" onclick="somar()">
+        <input type="button" value="Dobro" onclick="dobro()">
+
+    <script>
+        function somar()
+        {
+      let x = Number(document.getElementById('n1').value);
+      x = x.toFixed(2) + 190;
+      console.log("valor de x"+ x);
+      alert(x);
+        }
+
+        function dobro()
+        {
+      let x = document.getElementById('n1').value;
+      x = Number(x)*2;
+      console.log("valor de x"+ x);
+      alert(x);
+        }
+    </script>
+    </body>
+</html>
+   
+
